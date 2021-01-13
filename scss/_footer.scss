@@ -1,0 +1,65 @@
+//Footer
+footer{
+  @include margin-0-auto;
+  width: $width-footer;
+  height: $height-footer;
+  background-color: $bg-footer;
+  color: $text-color-footer;
+  ul{
+    width: $width-100x100;
+    height: $height-auto;
+    li{
+      list-style: none;
+      width: $width-100x100;
+      height: $height-auto;
+      text-align: center;
+    }
+    li:nth-child(1){
+      padding-top: 14px;
+      font-size: 75px;
+    }
+    li:nth-child(2){
+      font-size: 1.4rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      padding-top: 10px;
+      padding-bottom: 7px;
+    }
+    li:nth-child(3){
+      @include caracteristicas-letras;
+    }
+    li:nth-child(4){
+      font-size: 1rem;
+    }
+    li:nth-child(5){
+      @include caracteristicas-letras;
+    }
+    li:nth-child(6){
+      @include flex-center-center;
+      font-size: 25px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      i{
+        padding-left: 7px;
+        padding-right: 7px;
+      }
+    }
+    li:nth-child(7){
+      @include flex-center-center;
+      font-size: 1rem;
+      padding-bottom: 14px;
+      a{
+        text-decoration: none;
+        color: #fff;
+        padding-right: 7px;
+        padding-left: 7px;
+        font-style: italic;
+      }
+    }
+    li:nth-child(8){
+      font-size: .75rem;
+      padding-bottom: 20px;
+      font-style: italic;
+    }
+  }
+}

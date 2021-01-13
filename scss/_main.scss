@@ -1,0 +1,84 @@
+//Main
+main{
+  @include margin-0-auto;
+  width: $width-main;
+  height: $height-main;
+  .img{
+    width: $width-100x100;
+    height: $height-img;
+    object-fit: cover;
+    object-position: center;
+    img{
+      width: $width-100x100;
+      height: $height-100x100;
+    }
+  }
+  h1{
+    @include margin-0-auto;
+    width: $width-h1-h4-desc-usr-video-p;
+    height: $height-auto;
+    font-size: 1.2rem;
+    padding-top: 14px;
+  }
+  h4{
+    @include margin-0-auto;
+    width: $width-h1-h4-desc-usr-video-p;
+    height: $height-auto;
+    font-size: .9rem;
+  }
+  .desc-usr{
+    @include margin-0-auto;
+    @include flex-center-center;
+    width: $width-h1-h4-desc-usr-video-p;
+    height: $height-auto;
+    background-color: $bg-desc-usr;
+    display: flex;
+    padding: 7px;
+    .img-tch{
+      width: 20%;
+      img{
+        @include border-radius-50;
+        width: $width-100x100;
+        height: $height-100x100;
+      }
+    }
+    .texto-p1{
+      width: 80%;
+      padding-left: 14px;
+      padding-right: 14px;
+      font-size: .9rem;
+      font-style: italic;
+    }
+  }
+  .texto{
+    @include margin-0-auto;
+    @include border-top-bottom;
+    width: $width-h1-h4-desc-usr-video-p;
+    height: $height-auto;
+    font-size: .9rem;
+    letter-spacing: 1px;
+    padding: 7px;
+  }
+  .video{
+    @include margin-0-auto;
+    width: $width-h1-h4-desc-usr-video-p;
+    height: $height-video;
+
+    iframe{
+      width: $width-100x100;
+      height: 90%;
+    }
+    figcaption{
+      width: $width-100x100;
+      text-align: center;
+      font-size: .8rem;
+      font-style: italic;
+    }
+  }
+  p{
+    @include margin-0-auto;
+    width: $width-h1-h4-desc-usr-video-p;
+    height: $height-auto;
+    letter-spacing: 1px;
+  }
+}

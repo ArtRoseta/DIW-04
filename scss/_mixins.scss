@@ -1,0 +1,50 @@
+///Mixin para darle estilo al display
+///@group layout
+@mixin flex-center-space-between{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+///Mixin para display flex center center
+///@group layout
+@mixin flex-center-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+///Mixing para display flex justify-content
+///@group layout
+@mixin flex-center-around{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+///Mixin border radius 50% para redondear imagen
+///@group imagen
+@mixin border-radius-50{
+  border-radius: 50%;
+}
+
+///Mixin para colorear borde de arriba y de abajo del texto
+///@group border
+@mixin border-top-bottom{
+  margin-bottom: 20px;
+  border-top: 3px solid tomato;
+  border-bottom: 3px solid tomato;
+}
+
+///Mixin margin 0px auto
+///@group margin
+@mixin margin-0-auto{
+  margin: 0px auto;
+}
+
+///Mixin caracteristicas letra Footer
+///@group letras
+@mixin caracteristicas-letras{
+  font-size: .95rem;
+  font-style: italic;
+}

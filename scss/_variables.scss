@@ -1,0 +1,141 @@
+////@author Aritz Oscoz Jaime
+
+//---------------ELEMENTOS GENERALES---------------//
+
+/// Tipo de letra cabecera
+/// @group general
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+$header-font-family: 'Poppins', 'sans-serif';
+
+/// Tipo de letra general
+/// @group general
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+$base-font-family: 'Poppins', 'sans-serif';
+
+/// Color de texto de la página
+/// @group general
+$text-color: #000;
+
+/// Color de fondo
+/// @group general
+$bg-color: #fff;
+
+/// Color de -desc-usr
+/// @group general
+$bg-desc-usr: #f8b4b4;
+
+/// Color de border top y bottom texto
+///@group general
+$color-bordes: #fa2c2c;
+
+///Background color footer
+///@group general
+$bg-footer: #000;
+
+/// Color de texto de la footer
+///@group general
+$text-color-footer: #fff;
+
+//---------------SISTEMA LAYOUTS---------------//
+//Width-s
+
+///Width 100vw
+///@group layout
+$width-100-vw: 100vw;
+
+///Width de la página
+///@group layout
+$width-pagina: 970px;
+
+///Height de la página
+///@group layout
+$width-100x100: 100%;
+
+///Width header
+///@group layout
+$header-width: $width-pagina;
+
+///Width nav
+$width-nav: $width-pagina;
+
+///Width img
+///@group layout
+$width-img: 95vw;
+
+///Width main
+///@group layout
+$width-main: 970px;
+
+///Width h1,h4, desc-usr, video, p
+///@group layout
+$width-h1-h4-desc-usr-video-p: 85%;
+
+///Width footer
+///@group layout
+$width-footer: $width-pagina;
+
+///Width Media Query 841x1024
+///@group layout
+$width-pagina-841-1024: 841px;
+
+///Width Media Query769x840
+///@group layout
+$width-pagina-769-840: 769px;
+
+///Width Media Query 601x768
+///@group layout
+$width-pagina-601-768: 601px;
+
+///Width Media Query 481x600
+///@group layout
+$width-pagina-481-600: 481px;
+
+///Width Media Query 321x480
+///@group layout
+$width-pagina-321-480: 321px;
+
+//Height-s
+
+///Height de la página
+///@group layout
+$height-100x100: 100%;
+
+///Height Header
+///@group layout
+$height-header: 15vh;
+
+///Height icon-front-end, title, language
+///@group layout
+$height-icon-front-end-title-language: $height-header;
+
+///Height nav
+///@group layout
+$height-nav: 6vh;
+
+///Height img
+///@group layout
+$height-img: 60vh;
+
+///Height img 601-768
+///@group layout
+$height-img-601-768: 40vh;
+
+///Height auto
+///@group layout
+$height-auto: auto;
+
+///Height main
+///@group layout
+$height-main: $height-auto;
+
+///Height video
+///@group layout
+$height-video: 50vh;
+
+///Height video 601-768
+///@group layout
+$height-video-601-768: 25vh;
+
+///Height footer
+///@group layout
+$height-footer: auto;

@@ -1,0 +1,48 @@
+///Modificadores a--selected
+///@group modificadores
+
+.a--selected{
+  text-decoration: underline !important;
+  color: #000;
+  font-weight: bold;
+}
+
+///Modificadores a--hover-1
+///@group modificadores
+.a--hover-1:hover{
+  color: #F3A712;
+}
+///Modificadores a--hover-2
+///@group modificadores
+.a--hover-2:hover{
+  color: #A8C686;
+}
+///Modificadores a--hover-3
+///@group modificadores
+.a--hover-3:hover{
+  color: #669BBC;
+}
+///Modificadores a--hover-twitter
+///@group modificadores
+.a--hover-twitter:hover{
+  color: #669BBC;
+  cursor: pointer;
+}
+///Modificadores a--hover-facebook
+///@group modificadores
+.a--hover-facebook:hover{
+  color: #29335C;
+  cursor: pointer;
+}
+///Modificadores a--hover-instagram
+///@group modificadores
+.a--hover-instagram:hover{
+  color: rgba(247,180,28,1);
+  cursor: pointer;
+}
+///Modificadores a--hover-youtube
+///@group modificadores
+.a--hover-youtube:hover{
+  color: #dd0000;
+  cursor: pointer;
+}

@@ -1,0 +1,14 @@
+//Estilos que se aplican a todos los elementos
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+//Estilos que se aplican al body
+body{
+  width: $width-100-vw;
+  color: $text-color;
+  font-family: $base-font-family;
+  background-color: $bg-color;
+  overflow-x: hidden;
+}

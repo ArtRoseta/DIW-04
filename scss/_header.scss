@@ -1,0 +1,32 @@
+//Header
+header{
+  @include margin-0-auto;
+  @include flex-center-space-between;
+  width: $width-pagina;
+  height: $height-header;
+
+  //Icon-front-end
+  .icon-front-end{
+    @include flex-center-center;
+    height: $height-icon-front-end-title-language;
+    .fas{
+      font-size: 75px;
+    }
+  }
+  //Title
+  .title{
+    @include flex-center-center;
+    height: $height-icon-front-end-title-language;
+  }
+  //Language
+  .language{
+      @include flex-center-center;
+    height: $height-icon-front-end-title-language;
+    a{
+      margin-left: 14px;
+      margin-right: 14px;
+      text-decoration: none;
+      color: #000;
+    }
+  }
+}
