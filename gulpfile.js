@@ -62,6 +62,12 @@ function move_fonts(){
   .pipe(dest('./dist/fonts'));
 }
 
+//Mover ficheros html a -/dist/html
+function move_html_files(){
+  return src('./html/*')
+  .pipe(dest('./dist/html'));
+}
+
 //Mapa de configuración
 var config = {
   host: '127.0.0.1',
@@ -89,9 +95,10 @@ exports.move_img = move_img;
 exports.move_html = move_html;
 exports.move_js = move_js;
 exports.move_fonts = move_fonts;
+exports.move_html_files = move_html_files;
 exports.upload_server = upload_server;
 exports.process = series(borrar,
-  parallel(build_css, build_docs), parallel(move_img, move_html,move_js,move_fonts));
+  parallel(build_css, build_docs), parallel(move_img, move_html,move_js,move_fonts, move_html_files));
 
 exports.default = function(){
   watch("./scss/*.scss", build_css);

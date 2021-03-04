@@ -4,23 +4,33 @@ header{
   @include flex-center-space-between;
   width: $width-pagina;
   height: $height-header;
-
+  animation-name: translateP;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
   //Icon-front-end
   .icon-front-end{
     @include flex-center-center;
+    width: 20vw;
     height: $height-icon-front-end-title-language;
-    .fas{
-      font-size: 75px;
+    img{
+      width: 75px;
+      height: 75px;
     }
   }
   //Title
   .title{
     @include flex-center-center;
+    width: 80vw;
     height: $height-icon-front-end-title-language;
+    a{
+      color: $text-color;
+      text-decoration: none;
+    }
   }
   //Language
   .language{
-      @include flex-center-center;
+    @include flex-center-center;
+    width: 20vw;
     height: $height-icon-front-end-title-language;
     a{
       margin-left: 14px;

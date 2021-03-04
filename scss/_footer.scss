@@ -5,6 +5,9 @@ footer{
   height: $height-footer;
   background-color: $bg-footer;
   color: $text-color-footer;
+  animation-name: translateP;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
   ul{
     width: $width-100x100;
     height: $height-auto;
@@ -13,10 +16,14 @@ footer{
       width: $width-100x100;
       height: $height-auto;
       text-align: center;
+      font-style: bold;
     }
     li:nth-child(1){
       padding-top: 14px;
-      font-size: 75px;
+      img{
+        width: 75px;
+        height: 75px;
+      }
     }
     li:nth-child(2){
       font-size: 1.4rem;

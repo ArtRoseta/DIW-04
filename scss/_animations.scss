@@ -1,0 +1,27 @@
+@keyframes rotarImagen{
+  from{
+    transform: rotateY(0deg);
+  }to{
+    transform: rotateY(360deg);
+  }
+
+}
+
+@keyframes translateP{
+  from{
+    transform: translateX(-50px);
+    opacity: 0;
+  }to{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes translateN{
+  from{
+    transform: translateX(-50px);
+    opacity: 0;
+  }to{
+    transform: translate(0px);
+    opacity: 1;
+  }
+}

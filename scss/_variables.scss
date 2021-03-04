@@ -36,6 +36,14 @@ $bg-footer: #000;
 ///@group general
 $text-color-footer: #fff;
 
+///Color white
+///@group general
+$white: #ffffff;
+
+///Color black
+///@group general
+$black: #000000;
+
 //---------------SISTEMA LAYOUTS---------------//
 //Width-s
 
@@ -45,7 +53,7 @@ $width-100-vw: 100vw;
 
 ///Width de la página
 ///@group layout
-$width-pagina: 970px;
+$width-pagina: 75vw;
 
 ///Height de la página
 ///@group layout
@@ -64,7 +72,7 @@ $width-img: 95vw;
 
 ///Width main
 ///@group layout
-$width-main: 970px;
+$width-main: $width-pagina;
 
 ///Width h1,h4, desc-usr, video, p
 ///@group layout
@@ -114,7 +122,7 @@ $height-nav: 6vh;
 
 ///Height img
 ///@group layout
-$height-img: 60vh;
+$height-img: 45vh;
 
 ///Height img 601-768
 ///@group layout

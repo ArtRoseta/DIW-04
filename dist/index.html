@@ -17,7 +17,7 @@
     <header>
       <!-- Apartado icon-front-end -->
       <div class="icon-front-end">
-        <i class="fas fa-laptop-code i--width-height"></i>
+        <img src="img/logo-pc.png" alt="Logo Pc Freelancer-Guide">
       </div>
       <!-- Apartado title -->
       <div class="title">
@@ -26,6 +26,8 @@
       <!-- Apartado language -->
       <div class="language">
         <!-- Opciones idioma -->
+        <a href="#">CA </a>
+        |
         <a href="#"class='a--selected'>ES </a>
         |
         <a href="#"> EN</a>
@@ -35,24 +37,59 @@
     <nav>
       <!-- Enlaces Nav -->
       <a href="#" class='a--selected a--hover-1'>Module Bundlers</a>
-      <a href="#" class='a--hover-2'>Lenguajes Front-End</a>
+      <a href="html/lenguajes-front-end.html" class='a--hover-2'>Lenguajes Front-End</a>
       <a href="#" class='a--hover-3'>Preprocesadores</a>
     </nav>
     <!--MAIN -->
     <main>
       <!-- Apartado img -->
-      <div class="img">
-        <img src="img/escritorio.jpg" alt="Imagen Principal">
+      <div class="img image-container">
+        <div class="title" id='title-main'>
+          <span id='word-main'></span>
+        </div>
+        <img srcset="img/escritorio-320w.jpg 320w,
+                    img/escritorio-480w.jpg 480w,
+                    img/escritorio-600w.jpg 600w,
+                    img/escritorio-768w.jpg 768w,
+                    img/escritorio-840w.jpg 840w,
+                    img/escritorio-1024w.jpg 1024w,
+                    img/escritorio-1200w.jpg 1200w,
+                    img/escritorio-1600w.jpg 1600w"
+              sizes="(max-width: 320px) 280px,
+                    (max-width: 480px) 440px,
+                    (max-width: 600px) 560px,
+                    (max-width: 768px) 728px,
+                    (max-width: 840px) 800px,
+                    (max-width: 1024px) 984px,
+                    (max-width: 1200px) 1160px,
+                    (max-width: 1600px) 1560px"
+              src="img/escritorio.jpg" alt="Imagen Principal" class='img-ie'>
       </div>
       <!-- Titulo h1 -->
       <h1>Module Bundlers</h1>
       <!-- Titulo h4 -->
-      <h4>Por Aritz Oscoz Jaime, 07 de Enero de 2021</h4>
+      <h2>Por Aritz Oscoz Jaime, 07 de Enero de 2021</h2>
       <!-- Apartado desc-usr -->
       <div class="desc-usr">
         <!-- Apartado img-tch -->
-        <div class="img-tch">
-          <img src="img/perfil.jpg" alt="Imagen Perfil Usuario">
+        <div class="img-tch image-container">
+          <img srcset="img/perfil-320w.jpg 320w,
+                      img/perfil-480w.jpg 480w,
+                      img/perfil-600w.jpg 600w,
+                      img/perfil-768w.jpg 768w,
+                      img/perfil-840w.jpg 840w,
+                      img/perfil-1024w.jpg 1024w,
+                      img/perfil-1200w.jpg 1200w,
+                      img/perfil-1600w.jpg 1600w"
+                sizes="(max-width: 320px) 280px,
+                      (max-width: 480px) 440px,
+                      (max-width: 600px) 560px,
+                      (max-width: 768px) 728px,
+                      (max-width: 840px) 800px,
+                      (max-width: 1024px) 984px,
+                      (max-width: 1200px) 1160px,
+                      (max-width: 1600px) 1560px"
+                src="img/perfil.jpg" alt="Imagen Perfil Usuario" class='img-ie'>
         </div>
         <!-- Apartado texto-p1 -->
         <div class="texto-p1">
@@ -86,7 +123,9 @@
       <!-- Lista footer -->
       <ul>
         <!-- Elementos lista footer -->
-        <li><i class="fas fa-laptop-code i--width-height"></i></li>
+        <li>
+          <img src="img/logo-pc.png" alt="">
+        </li>
         <li>Enciclopedia de Front-End</li>
         <li>Calle Cantones 5, 31243 Estella</li>
         <li>Tel. 948 22 65 36</li>
@@ -108,5 +147,23 @@
         <li>Actividad realizada por Aritz Oscoz Jaime. Diseño de Interfaces WEB - Curso 2020-2021</li>
       </ul>
     </footer>
+    <div class="svg-cuadrado" id='svg-cuadrado'>
+
+    </div>
+    <!-- Javascript -->
+  <script src='js/js.js'></script>
+  <script type='text/javascript'>
+  if (navigator.userAgent.search("Trident") >= 0 || navigator.userAgent.search("MSIE") >= 0) {
+    var imgs = document.getElementsByClassName("img-ie");
+    var imgCont = document.getElementsByClassName("image-container");
+    var e = 0;
+    while(e < imgCont.length){
+      imgCont[e].classList.add('compat-object-fit');
+      imgCont[e].style.backgroundImage = "url('"+imgs[e].src+"')";
+      imgs[e].style.opacity = "0";
+      e++;
+    }
+  }
+  </script>
   </body>
 </html>
